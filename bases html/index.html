@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- le titre de la page -->
+    <title>Html5</title>
+    <!-- icone de l' onglet -->
+    <link rel="shortcut icon" href="logo.png" />
+  </head>
+  <body>
+    <section>
+      <div>
+        <h1>Titre<span>&#9760;</span></h1>
+        <p>
+          texte basic, <em>voici un texte en italique,</em
+          ><strong> et un texte en gras.</strong
+          ><span>L' élément en span ne revien pas a la ligne.</span>
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam non
+          temporibus perspiciatis, optio placeat repellat. Voluptate veniam
+          voluptas dicta ipsa quam ullam distinctio nam aut aliquid eligendi,
+          quisquam nesciunt sint!
+        </p>
+      </div>
+      <div>
+        <h2>Photos</h2>
+        <img src="./image.png" alt="paysage" height="300"
+      </div>
+      <div>
+        <h3>Listes</h3>
+        <ul>
+          <li>unorder list</li>
+          <li>unorder list</li>
+          <li>unorder list</li>
+        </ul>
+        <ol>
+          <li>order liste</li>
+          <li>order liste</li>
+          <li>order liste</li>
+          <li>order liste</li>
+          <li>order liste</li>
+          <li>order liste</li>
+          <li>order liste</li>
+          <li>order liste</li>
+          <li>order liste</li>
+          <li>order liste</li>
+          <li>order liste</li>
+          <li>order liste</li>
+        </ol>
+      </div>
+      <div>
+        <h4>Tableaux</h4>
+        <table border="1" width="50%">
+          <!-- legende -->
+          <caption>
+            Population d' Europe
+          </caption>
+
+          <!-- en tête -->
+          <thead>
+            <tr>
+              <th>Pays</th>
+              <th>Populations</th>
+            </tr>
+          </thead>
+
+          <!-- corps du tableau -->
+          <tbody>
+            <tr>
+              <td>France</td>
+              <td>66M</td>
+            </tr>
+            <tr>
+              <td>Allemagne</td>
+              <td>82M</td>
+            </tr>
+            <tr>
+              <td>Espagne</td>
+              <td>47M</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h5>Lien</h5>
+        <a href="https://htmlcheatsheet.com" target="blank">Html Cheat Sheet</a>
+        <br />
+        <a
+          href="https://www.toptal.com/designers/htmlarrows/symbols/"
+          target="blank"
+          >Icone Html</a
+        >
+      </div>
+      <div>
+        <h6>Video</h6>
+        <video
+          src="./Globe - 5925.mp4"
+          autoplay
+          loop
+          muted
+          cover
+          width="400"
+        ></video>
+      </div>
+      <br />
+
+      <!-- Formulaire -->
+
+      <h2>Formulaire</h2>
+      <form action="/action.php" method="post">
+        <label for="name">Nom</label>
+        <input id="name" type="text" placeholder="Entrer votre nom" />
+        <br />
+        <label for="age">Age</label>
+        <input id="age" type="number" min="0" max="99" step="1" value="18" />
+        <br />
+
+        <!-- input select  -->
+
+        <label for="gender">Genre</label>
+        <select id="gender">
+          <option value="homme">Homme</option>
+          <option selected value="femme">Femme</option>
+        </select>
+        <br />
+
+        <!-- input radio  -->
+
+        <div>
+          <input type="radio" name="type" checked id="human" />
+          <label for="human">Humain</label>
+          <input type="radio" name="type" id="dog" />
+          <label for="dog">Chien</label>
+          <input type="radio" name="type" id="cat" />
+          <label for="cat">Chat</label>
+        </div>
+        <textarea
+          cols="30"
+          rows="10"
+          placeholder="Entrez votre demande ici..."
+        ></textarea>
+
+        <br />
+
+        <label><input type="checkbox" />Accepter les CGV</label>
+        <label><input type="checkbox" />Accepter les CGV</label>
+        <label><input type="checkbox" />Accepter les CGV</label>
+
+        <input type="submit" value="Valider" />
+      </form>
+    </section>
+    <br />
+
+    <!-- mail & envois de fichier -->
+
+    <footer>
+      <a href="mailto:yanes75@hotmail.fr">Ecrivez moi</a>
+      <br />
+      <a href="./notice.txt" download="nom-du-fichier">Télécharger la notice</a>
+    </footer>
+  </body>
+</html>
