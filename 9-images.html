@@ -1,0 +1,68 @@
+<DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Images</title>
+</head>
+<body>
+	
+	<p>
+	<h1>Images et figures</h1>
+
+	<!-- pas d' accent nom image!! pas d' éspace!! balise orpheline -->
+
+	<img src="img/logo_funkynes_tampons.jpg" alt="Texte alternatif à l' image" width="500" height="auto" longdesc=""><br><br>
+
+<!--longdesk optionnel-->
+
+
+	<img src="img/Thailand_Travel.jpg" alt="" >
+		<figcaption>paysage thaïlandais</figcaption>
+			
+		
+
+	</p>
+
+	<p>
+
+		<img usemap="#worldmap" src="img/carte-monde-relief.jpg" alt="carte du monde" width="500" height="auto">
+
+		<map name="worldmap">
+
+			<area href="img/koh-tao-thailand.jpg" shape="rect" coords="0,0 250,250">
+	
+		</map>
+
+	</p>
+
+
+<!--shape=  rect -> x1,y1,x2,y2
+			circle -> x, y, z
+			poly -> x1,y1,x2,y2...-->
+
+
+	<p>
+
+		<img usemap="#worldmap" src="img/carte-monde-relief.jpg" alt="carte du monde" width="500" height="auto">
+
+		<map name="worldmap">
+
+			<area href="img/koh-tao-thailand.jpg" shape="rect" coords="250,250 300,300">
+	
+		</map>
+	</p>
+
+	<p>
+		<picture>
+			
+			<source srcset="img/Thailand_Travel.jpg" media="(min-widhth: 500px)">
+			<img src="img/koh-tao-thailand.jpg" width="1200" height="auto">
+			
+			
+<!--probleme avec srcset, et pour les chords de la map... a approffondir...-->
+		</picture>
+
+	</p>
+</body>
+
+</html>

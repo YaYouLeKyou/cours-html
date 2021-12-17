@@ -1,0 +1,144 @@
+<DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>formulaires 2</title>
+</head>
+<body>
+
+<!-- créé un formulaire a entré multiple avec "post" -->
+	<p><form method="post" id="id form" action="">
+
+		<!-- défini la séction  form "id form" permet de lié lui donner un nom avec name-->
+
+		<fieldset form="id form">     <!-- disabled="" permet de désactivé... rendre inutilisable -->
+			
+				<legend>Ma section</legend>
+			
+			<!-- entrée pour le nom -->
+			Nom : <input type="text" name="user_name">
+			
+			<!--  soumettre -->
+			<input type="submit" name="valid_form" value="Envoyer" >
+			
+			<p><input type="submit" name="valid_form" value="Envoyer"></p>
+				
+				</fieldset>
+				</p>
+
+
+
+				<p><form method="post" id="id form" action="">
+
+		<fieldset form="id form">     <!-- disabled="" permet de désactivé... rendre inutilisable -->
+			
+			<legend>Ma section</legend>
+			
+			Nom : <input type="text" name="user_name">
+			
+			<input type="submit" name="valid_form" value="Envoyer" >
+			
+			<p><textarea name="article content" 
+				
+				rows="10" cols="60" 
+				
+				minlength="10" maxlength="20" 
+				
+				placeholder="Votre texte ici"></textarea></p>
+
+				<!--  <rows= cols= defini le nombre de lignes et colonnes       
+
+				minlenght=nombre minimum de caractère a entrer et max avec maxlenght
+
+				on peut également utilé wrap="hard" ou wrap="soft"  -->
+				
+				
+
+			<p><input type="submit" name="valid_form" value="Envoyer"></p>
+				
+				
+
+
+				<p>Choix systeme :<br></p>
+
+				<select name="choixOS" form="id form" required="">
+					<option value="win">Windows</option>
+					<option value="mac">MacOS</option>
+					<option value="Linux">linux</option>
+
+					<!-- form id lie au formulaire 
+					    
+					    requiered 
+
+					    value utile au traitement des données... non visuel
+
+					    <label> peut être utilisé... -->
+				</select><br><br>
+					    	
+Choix de jeu:<br>
+					    	<select name="choixJeu">
+
+					    		<optgroup label="RPG">
+					    		<option value="Final fantaisie">Final fantaisie</option>
+					    		<option value="Zelda">Zelda</option>
+					    		</optgroup>
+
+					    		<optgroup label="FPS">
+					    		<option value="Call of Duty">Call of Duty</option>
+					    		<option value="Far cry">Far cry</option>
+					    		</optgroup>
+
+					    	</select><br><br><br>
+
+
+Choix de jeu multiple (selectionner avec Ctrl):<br>
+					    	<select name="choixJeu" multiple="" >
+
+					    		<optgroup label="RPG">
+					    		<option value="Final fantaisie">Final fantaisie</option>
+					    		<option value="Zelda">Zelda</option>
+					    		</optgroup>
+
+					    		<optgroup label="FPS">
+					    		<option value="Call of Duty" disabled="" >Call of Duty</option>
+					    		<option value="Far cry">Far cry</option>
+					    		</optgroup>
+
+					    	</select><br><br>
+<!-- disable désactive -->
+
+							<!--balise Dataliste<br>
+
+							permet un choix multiple et a l' utilisateur de proposer un autre titre -->
+
+							Choisir un jeu<input list="choixJeu" type="" name="">
+							<datalist id="choixJeu">
+								<option value="Batman"></option>
+								<option value="Alien"></option>
+
+
+							</datalist><br>
+
+							<!--balise button-->
+
+							<button type="button">Cliquez ici</button><br>
+
+							<!-- a compléter avec Javascript-->
+
+							<button formmethod="POST" formaction="mapage.html" type="submit">Cliquez ici</button><br>
+
+							<!--permet d' envoyer un formulaire, avec javascript-->
+
+
+
+				</select>
+				
+				</fieldset>
+
+				
+				
+
+				</p>
+</body>
+
+</html>

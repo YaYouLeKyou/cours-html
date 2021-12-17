@@ -1,0 +1,132 @@
+<DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>tableaux</title>
+</head>
+<body>
+	<table>
+		<caption>Listing de jeux vidéo</caption>
+		
+		<thead></thead>
+
+		<tbody></tbody>
+
+		<tfoot></tfoot>
+
+	</table>
+
+	<table>
+		<caption>Listing de jeux vidéos</caption>
+
+		<tr>
+			<td>Colonne 1</td>
+			<td>Colonne 2</td>
+			<td>Colonne 3</td>
+		</tr>
+
+		<tr>
+			<td>Colonne 1 ( ligne2 )</td>
+			<td>Colonne 2 ( ligne2 )</td>
+			<td>Colonne 3 ( ligne2 )</td>
+			
+		</tr>
+	</table>
+
+	<table>
+		<caption>Listing de jeux vidéos</caption>
+
+	<thead><tr>
+			<td>Nom</td>
+			<td>Genre</td>
+			<td>Prix</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Assassin's creed</td>
+			<td>action/aventure</td>
+			<td>69.99€</td>
+			
+		</tr>
+	</tbody>
+
+		
+	<tfoot>
+		<tr>
+			<td>rocket league</td>
+			<td>sport</td>
+			<td>24.99€</td>
+			
+		</tr>
+	</tfoot>
+	</table>
+
+	<table>
+		<caption>Listing de jeux vidéos</caption>
+
+	<thead><tr>
+			<th>Nom</th>
+			<th colspan="2">Infos</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>Assassin's creed</th>
+			<td>action/aventure</td>
+			<td>69.99€</td>
+			
+		</tr>
+
+		<tr>
+			<th>Rocket league</th>
+			<td>sport</td>
+			<td rowspan="2">24.99€</td>
+			
+		</tr>
+
+		<tr>
+			<th>World of warcraft</th>
+			<td>mmo/rpg</td>
+			
+			
+		</tr>
+	</tbody>
+
+	</table>
+
+	<table>
+		<caption>Listing de jeux vidéos</caption>
+		<colgroup>
+			<col class="stylecolonne1">
+			<col class="stylecolonne2et2" span="2">
+		</colgroup>
+
+	<thead><tr>
+			<th id="nomjeu">Nom</th>
+			<th id="genrejeu">Genre</th>
+			<th abbr="Prix" id="prixjeu">Prix du jeux</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th headers="nomjeu">Assassin's creed</th>
+			<td headers="genrejeu">action/aventure</td>
+			<td headers="prixjeu">69.99€</td>
+			
+		</tr>
+	</tbody>
+
+		
+	<tfoot>
+		<tr>
+			<th headers="nomjeu">rocket league</th>
+			<td id="genrejeu">sport</td>
+			<td id="prixjeu">24.99€</td>
+			
+		</tr>
+	</tfoot>
+	</table>
+</body>
+
+</html>

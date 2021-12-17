@@ -1,0 +1,56 @@
+<DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Sons et videos</title>
+</head>
+<body>
+
+	<!-- audio mp3 compatible partout
+			wav sauf IE
+			ogg sauf IE Safari
+
+		video mp4 partout
+			webm ogg sauf IE Safari-->
+
+	<p>
+
+		Petit dragon<br>
+		<audio src="audio/petit-dragon.mp3" controls="" preload="metadata" volume="0.5">
+
+	</audio>
+	</p>
+<!-- different controls -> autoplay
+						   muted  peut etre ajouté 
+						   loop aussi
+
+						   preload  pour précharger un fichier 
+						   =none
+						   preload="auto" 
+						   preload="metadata"-->
+	<!--ou-->
+	<p>
+
+		Fela<br>
+			<audio controls="">
+			
+			<source src="audio/fela.mp3" type="audio/mp3">
+
+			</audio>
+
+	</p>
+
+	<p>Videos<br><br>
+		Kilomètre de lignes clip<br>
+			
+			<video src="videos/km.mp4"  controls="" width="600" height="auto" poster="img/logo_funkynes_tampons.jpg"></video>
+
+			<!--ou-->
+
+			<source src="videos/kanka.mp4" type="videos/mp4" controls>
+			<!-- cette 2eme methode ne fonctionne pas!? a voir...	
+	</p>
+
+</body>
+
+</html>
